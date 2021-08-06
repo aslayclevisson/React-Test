@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App {
+  background-color: #bdbdbd;
+  display: flex;
+  justify-content: center;
+}
+
+.posts {
+  display: grid;
+  background-color: #282c34;
+  font-size: calc(5px + 2vmin);
+  color: white;
+  gap: 25px;
+  padding: 30px;
+  min-height: 100vh;
+  max-width: 95vw;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.posts-content {
+  padding: 30px;
+}
+
+.posts-complete {
+  background-color: rgba(0, 0, 0, .15);
+  box-shadow: 0 0 15px rgba(255, 255, 255, .15);
+  transition: .5s;
+}
+
+.posts-complete:hover {
+  transform: scale(1.03);
+}
+
+.photos img {
+  max-width: 100%;
+  max-height: auto;
+}
