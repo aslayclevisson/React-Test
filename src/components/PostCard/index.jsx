@@ -9,7 +9,7 @@
             <div className="photos">
                 <img src={post.cover} alt={post.title} />
             </div>
-            <div key={post.id} className="posts-content">
+            <div className="posts-content">
                 <h2>{post.title}</h2>
                 <p>{post.body}</p>
             </div>
