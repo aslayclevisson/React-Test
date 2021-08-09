@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import './App.css';
+import { PostCard } from './components/PostCard';
 class App extends Component {
   state = {
     posts: [
@@ -36,17 +37,8 @@ class App extends Component {
       <section className="App">
         <header className="posts">
           {posts.map(post => (
-            <div className="posts-complete">
-              <div className="photos">
-                <img src={post.cover} alt={post.title} />
-              </div>
-              <div key={post.id} className="posts-content">
-                <h2>{post.title}</h2>
-                <p>{post.body}</p>
-              </div>
-            </div>
+            <PostCard post = {post} /> 
           ))}
-
 
           <a
             className="App-link"
